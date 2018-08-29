@@ -1,0 +1,7 @@
+title: Stats
+description: ""
+url: "stats.twofactorauth.org"
+permalink: pretty
+markdown: kramdown
+sass:
+    style: compressed
