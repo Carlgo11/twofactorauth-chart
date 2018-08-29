@@ -9,23 +9,6 @@ function getJson(url, b) {
 let a = {};
 getJson('https://twofactorauth.org/data.json', b => {
   let data = b;
-  const properties = [
-    'name',
-    'url',
-    'tfa',
-    'software',
-    'hardware',
-    'phone',
-    'sms',
-    'email',
-    'twitter',
-    'facebook',
-    'email_address',
-    'img',
-    'doc',
-    'lang',
-  ];
-  let c = `category,${properties.join(',')}\n`;
   for (let i in data) {
     a[i] = {};
     a['' + i]['true'] = 0;
